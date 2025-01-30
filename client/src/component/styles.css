@@ -1,6 +1,6 @@
 /* Chat Container */
 .chat-container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 50px auto;
   padding: 20px;
 
@@ -23,6 +23,7 @@
   
   /* Chat Box */
   .chat-box {
+    width: 450px;
     height: 400px;
     overflow-y: auto;
     padding: 10px;
@@ -72,6 +73,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 15rem;
   }
   
   .input-container button {
@@ -81,5 +83,22 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 5rem;
   }
+
+  /* Hide scrollbar for Chrome, Safari, and Edge */
+.chat-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.chat-box {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.chat-box {
+  -ms-overflow-style: none;
+}
+
   
