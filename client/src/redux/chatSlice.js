@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/chat";
+const API_URL = "https://backend-w5lx.onrender.com/api/chat";
 
 export const fetchChatResponse = createAsyncThunk(
   "chat/fetchChatResponse",
